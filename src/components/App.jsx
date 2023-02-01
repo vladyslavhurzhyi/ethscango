@@ -10,7 +10,7 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      EthScanGo
+      <h1 className="text-3xl font-bold underline">EthScanGo</h1>
     </div>
   );
 };
