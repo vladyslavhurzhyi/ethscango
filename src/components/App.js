@@ -18,7 +18,6 @@ const App = () => {
       <Route path="/transaction" element={<TransactionDetailsPage />} />
       <Route path="*" element={<NotFoundPage />} />
     </Route>
-  </Routes>);
 };
 
 export default App;
