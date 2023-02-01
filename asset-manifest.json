@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ethscango/static/css/main.7acaea2f.css",
+    "main.js": "/ethscango/static/js/main.3d6a7db7.js",
+    "index.html": "/ethscango/index.html",
+    "main.7acaea2f.css.map": "/ethscango/static/css/main.7acaea2f.css.map",
+    "main.3d6a7db7.js.map": "/ethscango/static/js/main.3d6a7db7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.3d6a7db7.js"
+  ]
+}
