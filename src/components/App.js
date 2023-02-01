@@ -10,6 +10,7 @@ const TransactionDetailsPage = lazy(() =>
 const NotFoundPage = lazy(() => import('../pages/NotFound'));
 
 const App = () => {
+  return (
   <Routes>
     <Route path="/" element={<SharedLayout />}>
       <Route index element={<HomePage />} />
@@ -17,7 +18,7 @@ const App = () => {
       <Route path="/transaction" element={<TransactionDetailsPage />} />
       <Route path="*" element={<NotFoundPage />} />
     </Route>
-  </Routes>;
+  </Routes>);
 };
 
 export default App;
