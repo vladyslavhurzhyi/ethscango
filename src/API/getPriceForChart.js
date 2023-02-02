@@ -2,18 +2,19 @@ import axios from 'axios';
 
 export const getPriceEthMonth = async () => {
   try {
-    const { data } = await axios.get(
+    const response = await axios.get(
       'https://api.coincap.io/v2/assets/ethereum/history?interval=d1'
     );
+    const data = response.data;
+
+    console.log('data.rev', data.data.reverse());
     const dataReverse = data.data.reverse();
 
     const price = dataReverse.map(item => {
       return item;
     });
 
-    const pricePerMonth = price.slice(0, 30);
-
-    console.log('pricePerMonth', pricePerMonth);
+    const pricePerMonth = price.slice(330);
 
     return pricePerMonth;
   } catch (error) {
