@@ -7,6 +7,9 @@ import { BrowserRouter } from 'react-router-dom';
 import App from 'components/App';
 import './index.css';
 
+import { getMarketCapEth } from 'API/getDataMarketCap';
+
+getMarketCapEth();
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
