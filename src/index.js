@@ -6,10 +6,9 @@ import { BrowserRouter } from 'react-router-dom';
 
 import App from 'components/App';
 import './index.css';
+import { getPriceEthMonth } from 'API/getPriceForChart';
 
-import { getMarketCapEth } from 'API/getDataMarketCap';
-
-getMarketCapEth();
+getPriceEthMonth();
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
