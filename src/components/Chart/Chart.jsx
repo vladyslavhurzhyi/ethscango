@@ -42,7 +42,8 @@ export const Chart = () => {
         label: 'Price $',
         data: price.map(item => item),
         borderColor: 'black',
-        pointBorderWidth: 3,
+        pointBorderWidth: 0,
+        borderWidth: 2.5,
         tension: 0.5,
       },
     ],
@@ -69,7 +70,7 @@ export const Chart = () => {
   return (
     <>
       {price.length > 1 && (
-        <div style={{ maxWidth: '900px', maxHeight: '600px' }}>
+        <div style={{ maxWidth: '300px', maxHeight: '200px' }}>
           <Line data={data} options={options}></Line>
         </div>
       )}
