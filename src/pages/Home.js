@@ -1,6 +1,6 @@
 import { Chart } from 'components/Chart/Chart';
 import { LastMinedBlock } from 'components/LastMinedBlock/LastMinedBlock';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { SearchBox } from 'components/SearchBox/SearchBox';
 import { GasPrice } from 'components/GasPrice/GasPrice';
 export default function Home() {
