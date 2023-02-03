@@ -7,16 +7,27 @@ const provider = ethers.getDefaultProvider(network, {
   etherscan: 'RRGX2T9UHU34WNT1V78GWJMGFSUKFFX6ID',
   infura: '80a2cde872574b6380285aedb7c3fc77',
   alchemy: 'NGRnDW4RdxfHH_ZgkWkvds6I3wiEQcGi',
-  pocket: {
-    applicationId: '49753bca74527ebbbfcd8d63',
-    applicationSecretKey: 'da5ab6ab31ea0cb93b639a4f86648449',
-  },
+  // pocket: {
+  //   applicationId: '49753bca74527ebbbfcd8d63',
+  //   applicationSecretKey: 'da5ab6ab31ea0cb93b639a4f86648449',
+  // },
 });
 
-export const getTransactionData = async hash => {
+export const getTransactionData = async transactionHash => {
   try {
-    const transactionData = await provider.getTransaction(hash);
-    console.log('transactionData', transactionData);
+    const data = await provider.getTransaction(transactionHash);
+
+    if (!data) return null;
+
+    const { hash, blockNumber, from, to, value } = data;
+
+    return {
+      hash,
+      blockNumber,
+      from,
+      to,
+      value: ethers.utils.formatEther(value._hex),
+    };
   } catch (error) {
     console.log(error);
   }
