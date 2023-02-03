@@ -15,7 +15,7 @@ export const AppBar = () => {
             to="/"
             className="flex items-center text-lg leading-relaxed py-2 mr-4 whitespace-nowrap dark:text-white"
           >
-            <FaEthereum className="mr-1 text-blue-500" size={22} />
+            <FaEthereum className="mr-1 text-sky-400" size={22} />
             EthScanGo
           </Link>
 

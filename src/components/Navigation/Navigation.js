@@ -9,7 +9,7 @@ const navItems = [
 const setLinkClassName = ({ isActive }) => {
   const baseLinkClass = 'px-1 lg:px-3 py-2 flex items-center text-sm';
   return isActive
-    ? `${baseLinkClass} text-blue-500`
+    ? `${baseLinkClass} text-sky-400`
     : `${baseLinkClass} dark:text-white hover:opacity-75`;
 };
 
