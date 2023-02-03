@@ -27,6 +27,8 @@ export const getTransactionList = async () => {
     const data = await provider.getBlock();
     const transaction = data.transactions.slice(0, 10);
     console.log('transactionList', transaction);
+
+    console.log('data', data);
   } catch (error) {
     console.log(error);
   }
@@ -49,6 +51,16 @@ export const getEthPrice = async () => {
     );
 
     console.log('ETH Price in USD', data.USD);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const getLastMinedBlock = async () => {
+  try {
+    const data = await provider.getBlockNumber();
+    console.log('last mined block number', data);
+    return data;
   } catch (error) {
     console.log(error);
   }
