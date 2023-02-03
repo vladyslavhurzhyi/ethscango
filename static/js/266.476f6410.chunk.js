@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkethscango=self.webpackChunkethscango||[]).push([[266],{266:function(n,e,t){t.r(e),t.d(e,{default:function(){return s}});var c=t(184);function s(){return(0,c.jsx)("div",{children:(0,c.jsx)("h1",{className:"text-3xl font-bold underline",children:"EthScanGo"})})}}}]);
-//# sourceMappingURL=266.476f6410.chunk.js.map
