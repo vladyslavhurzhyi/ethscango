@@ -43,6 +43,7 @@ export const Chart = () => {
         data: price.map(item => item),
         borderColor: 'black',
         pointBorderWidth: 0,
+        pointBackgroundColor: 'transparent',
         borderWidth: 2.5,
         tension: 0.5,
       },
