@@ -66,7 +66,7 @@ export default function TransactionDetails() {
 
               <div>Value:</div>
               <div className="col-span-4 md:col-span-3 mb-2 md:mb-0">
-                {value}
+                {value} Ether
               </div>
             </div>
           )}
