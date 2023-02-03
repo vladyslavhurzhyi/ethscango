@@ -27,6 +27,8 @@ export const getTransactionList = async () => {
     const data = await provider.getBlock();
     const transaction = data.transactions.slice(0, 10);
     console.log('transactionList', transaction);
+
+    console.log('data', data);
   } catch (error) {
     console.log(error);
   }
