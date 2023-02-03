@@ -38,7 +38,8 @@ export const getGasPrice = async () => {
   try {
     const data = await provider.getGasPrice();
     const gasPrice = ethers.utils.formatUnits(data, 'gwei');
-    console.log('gasPrice', gasPrice);
+
+    return Number(gasPrice);
   } catch (error) {
     console.log(error);
   }
