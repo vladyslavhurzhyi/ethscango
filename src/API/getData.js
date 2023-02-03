@@ -55,3 +55,13 @@ export const getEthPrice = async () => {
     console.log(error);
   }
 };
+
+export const getLastMinedBlock = async () => {
+  try {
+    const data = await provider.getBlockNumber();
+    console.log('last mined block number', data);
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
+};
