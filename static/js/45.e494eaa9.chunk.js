@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkethscango=self.webpackChunkethscango||[]).push([[45],{45:function(n,e,c){c.r(e),c.d(e,{default:function(){return r}});var t=c(184);function r(){return(0,t.jsx)("div",{children:(0,t.jsx)("h1",{children:"Transaction Page"})})}}}]);
-//# sourceMappingURL=45.e494eaa9.chunk.js.map

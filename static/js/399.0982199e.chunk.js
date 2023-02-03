@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkethscango=self.webpackChunkethscango||[]).push([[399],{399:function(e,n,s){s.r(n),s.d(n,{default:function(){return r}});var c=s(184);function r(){return(0,c.jsx)("div",{children:(0,c.jsx)("h1",{children:"Address Page"})})}}}]);
-//# sourceMappingURL=399.0982199e.chunk.js.map
