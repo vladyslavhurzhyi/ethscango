@@ -1,3 +1,5 @@
+import { Chart } from 'components/Chart/Chart';
+
 // import { Helmet } from 'react-helmet';
 import { SearchBox } from 'components/SearchBox/SearchBox';
 export default function Home() {
@@ -8,6 +10,9 @@ export default function Home() {
       </Helmet> */}
       <h1 className="text-3xl font-bold underline">EthScanGo</h1>
       <SearchBox />
+      <div>
+        <Chart />
+      </div>
     </div>
   );
 }
