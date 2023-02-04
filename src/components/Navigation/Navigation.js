@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 const navItems = [
   { href: '/', text: 'Home' },
   { href: 'address', text: 'Address' },
-  { href: 'transaction', text: 'Transaction' },
 ];
 
 const setLinkClassName = ({ isActive }) => {
