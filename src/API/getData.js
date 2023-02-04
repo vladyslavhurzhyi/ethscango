@@ -33,13 +33,13 @@ export const getTransactionData = async transactionHash => {
   }
 };
 
-export const getTransactionList = async () => {
+export const getTransactionListHash = async () => {
   try {
     const data = await provider.getBlock();
     const transaction = data.transactions.slice(0, 10);
     console.log('transactionList', transaction);
 
-    console.log('data', data);
+    return transaction;
   } catch (error) {
     console.log(error);
   }
