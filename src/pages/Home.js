@@ -3,6 +3,8 @@ import { LastMinedBlock } from 'components/LastMinedBlock/LastMinedBlock';
 import { Helmet } from 'react-helmet-async';
 import { SearchBox } from 'components/SearchBox/SearchBox';
 import { GasPrice } from 'components/GasPrice/GasPrice';
+import { TransactionList } from 'components/TransactionList/TransactionList';
+
 export default function Home() {
   return (
     <div>
@@ -18,6 +20,7 @@ export default function Home() {
       <div>
         <Chart />
       </div>
+      <TransactionList />
     </div>
   );
 }
