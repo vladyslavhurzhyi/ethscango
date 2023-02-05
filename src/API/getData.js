@@ -33,12 +33,11 @@ export const getTransactionData = async transactionHash => {
   }
 };
 
-export const getTransactionListHash = async () => {
+export const getTransactionLis = async () => {
   try {
-    const data = await provider.getBlock();
+    const data = await provider.getBlockWithTransactions();
     const transaction = data.transactions.slice(0, 10);
-    console.log('transactionList', transaction);
-
+    console.log('transaction', transaction);
     return transaction;
   } catch (error) {
     console.log(error);
@@ -61,7 +60,6 @@ export const getEthPrice = async () => {
     const { data } = await axios.get(
       'https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD'
     );
-
     console.log('ETH Price in USD', data.USD);
   } catch (error) {
     console.log(error);
@@ -71,7 +69,6 @@ export const getEthPrice = async () => {
 export const getLastMinedBlock = async () => {
   try {
     const data = await provider.getBlockNumber();
-    console.log('last mined block number', data);
     return data;
   } catch (error) {
     console.log(error);

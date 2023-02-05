@@ -5,15 +5,11 @@ export const getPriceEthMonth = async () => {
     const response = await axios.get(
       'https://api.coincap.io/v2/assets/ethereum/history?interval=d1'
     );
-    const data = response.data;
+    const data = response.data.data;
 
-    console.log('data.rev', data.data.reverse());
-    const dataReverse = data.data.reverse();
-
-    const price = dataReverse.map(item => {
+    const price = data.map(item => {
       return item;
     });
-
     const pricePerMonth = price.slice(330);
 
     return pricePerMonth;
