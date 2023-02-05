@@ -19,7 +19,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<SharedLayout />}>
         <Route index element={<HomePage />} />
-        <Route path="address" element={<AddressPage />} />
+        <Route path="address/:addressnum" element={<AddressPage />} />
         <Route
           path="transactions/:transactionHash"
           element={<TransactionDetailsPage />}
