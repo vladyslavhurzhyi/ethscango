@@ -1,7 +1,7 @@
 import { Chart } from 'components/Chart/Chart';
 import { LastMinedBlock } from 'components/LastMinedBlock/LastMinedBlock';
 import { Helmet } from 'react-helmet-async';
-import { SearchBox } from 'components/SearchBox/SearchBox';
+import { Hero } from 'components/Hero/Hero';
 import { GasPrice } from 'components/GasPrice/GasPrice';
 import { TransactionList } from 'components/TransactionList/TransactionList';
 
@@ -13,8 +13,7 @@ export default function Home() {
           <title>Home</title>
         </Helmet>
       }
-      <h1 className="text-3xl font-bold underline">EthScanGo</h1>
-      <SearchBox />
+      <Hero />
       <LastMinedBlock />
       <GasPrice />
       <div>

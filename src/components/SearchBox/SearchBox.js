@@ -18,12 +18,14 @@ export const SearchBox = () => {
   };
 
   return (
-    <div>
-      <h2>
-        <SiEthereum size="36px" color="#0b5394" /> ETH Chain Explorer
+    <div className="relative py-11 pl-10  dark:text-white ">
+      <h2 className="flex items-center text-2xl leading-relaxed py-2 mr-4 whitespace-nowrap ">
+        <SiEthereum className="mr-1 text-purple-600" size={36} /> ETH Chain
+        Explorer
       </h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="flex items-center">
         <input
+          className="w-2/4 pl-2 h-9 rounded outline-none dark:text-black "
           type="text"
           name="query"
           value={searchQuery}
@@ -33,8 +35,11 @@ export const SearchBox = () => {
           required
           onChange={handleChange}
         />
-        <button type="submit">
-          <HiSearch size="20px" color="#66161c" />
+        <button
+          type="submit"
+          className="flex justify-center items-center rounded bg-gray-700 ml-1 w-11 h-10"
+        >
+          <HiSearch className=" text-purple-600" size={30} />
         </button>
       </form>
     </div>
