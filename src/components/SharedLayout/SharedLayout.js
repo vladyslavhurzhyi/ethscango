@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 // import { ToastContainer } from 'react-toastify';
 
 import { AppBar } from '../AppBar/AppBar';
+import { Footer } from 'components/Footer/Footer';
 
 export const SharedLayout = () => {
   return (
@@ -14,6 +15,7 @@ export const SharedLayout = () => {
         <Outlet />
       </Suspense>
       {/* <ToastContainer /> */}
+      <Footer />
     </div>
   );
 };
