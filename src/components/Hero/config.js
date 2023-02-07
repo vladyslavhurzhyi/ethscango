@@ -57,6 +57,5 @@ export const options = {
   retina_detect: true,
   fullScreen: {
     enable: false,
-    zIndex: 0,
   },
 };
