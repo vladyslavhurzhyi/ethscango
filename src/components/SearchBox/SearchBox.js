@@ -18,14 +18,14 @@ export const SearchBox = () => {
   };
 
   return (
-    <div className="relative py-11 pl-10  dark:text-white ">
+    <div className="relative w-full md:w-2/3 lg:w-2/4 my-11 md:ml-10  dark:text-white ">
       <h2 className="flex items-center text-2xl leading-relaxed py-2 mr-4 whitespace-nowrap ">
         <SiEthereum className="mr-1 text-purple-600" size={36} /> ETH Chain
         Explorer
       </h2>
       <form onSubmit={handleSubmit} className="flex items-center">
         <input
-          className="w-2/4 pl-2 h-9 rounded outline-none dark:text-black "
+          className="w-full pl-2 h-9 rounded outline-none dark:text-black "
           type="text"
           name="query"
           value={searchQuery}
