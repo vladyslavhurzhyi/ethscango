@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/ethscango/static/css/main.78e43e0e.css",
-    "main.js": "/ethscango/static/js/main.88545f4c.js",
-    "static/js/148.4e9841de.chunk.js": "/ethscango/static/js/148.4e9841de.chunk.js",
+    "main.css": "/ethscango/static/css/main.c08d0cc6.css",
+    "main.js": "/ethscango/static/js/main.6aa8db14.js",
+    "static/js/148.2d625f03.chunk.js": "/ethscango/static/js/148.2d625f03.chunk.js",
     "static/js/45.41dc6388.chunk.js": "/ethscango/static/js/45.41dc6388.chunk.js",
     "static/js/914.9a708012.chunk.js": "/ethscango/static/js/914.9a708012.chunk.js",
     "static/js/922.2fc8237e.chunk.js": "/ethscango/static/js/922.2fc8237e.chunk.js",
-    "static/js/602.28471ad8.chunk.js": "/ethscango/static/js/602.28471ad8.chunk.js",
-    "static/js/554.89f98309.chunk.js": "/ethscango/static/js/554.89f98309.chunk.js",
+    "static/js/187.4078c10c.chunk.js": "/ethscango/static/js/187.4078c10c.chunk.js",
+    "static/js/989.85a40d40.chunk.js": "/ethscango/static/js/989.85a40d40.chunk.js",
     "index.html": "/ethscango/index.html",
-    "main.78e43e0e.css.map": "/ethscango/static/css/main.78e43e0e.css.map",
-    "main.88545f4c.js.map": "/ethscango/static/js/main.88545f4c.js.map",
-    "148.4e9841de.chunk.js.map": "/ethscango/static/js/148.4e9841de.chunk.js.map",
+    "main.c08d0cc6.css.map": "/ethscango/static/css/main.c08d0cc6.css.map",
+    "main.6aa8db14.js.map": "/ethscango/static/js/main.6aa8db14.js.map",
+    "148.2d625f03.chunk.js.map": "/ethscango/static/js/148.2d625f03.chunk.js.map",
     "45.41dc6388.chunk.js.map": "/ethscango/static/js/45.41dc6388.chunk.js.map",
     "914.9a708012.chunk.js.map": "/ethscango/static/js/914.9a708012.chunk.js.map",
     "922.2fc8237e.chunk.js.map": "/ethscango/static/js/922.2fc8237e.chunk.js.map",
-    "602.28471ad8.chunk.js.map": "/ethscango/static/js/602.28471ad8.chunk.js.map",
-    "554.89f98309.chunk.js.map": "/ethscango/static/js/554.89f98309.chunk.js.map"
+    "187.4078c10c.chunk.js.map": "/ethscango/static/js/187.4078c10c.chunk.js.map",
+    "989.85a40d40.chunk.js.map": "/ethscango/static/js/989.85a40d40.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.78e43e0e.css",
-    "static/js/main.88545f4c.js"
+    "static/css/main.c08d0cc6.css",
+    "static/js/main.6aa8db14.js"
   ]
 }
