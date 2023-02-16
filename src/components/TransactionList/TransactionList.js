@@ -16,32 +16,59 @@ export const TransactionList = () => {
 
   return (
     <>
-      <div className="container max-w-xs">
-        <ul>
-          {transaction.length > 0 &&
-            transaction.map(item => {
-              return (
-                <li key={item.hash}>
-                  <div className="flex flex-col mb-2 md:mb-0">
-                    <FaStream style={{ marginRight: '5px' }} />
-                    <Link to={`transactions/${item.hash}`}>
-                      <p className="text-sm">{item.hash}</p>
-                    </Link>
+      <div className="container px-4">
+        <p className="font-bold">Latest Transactions</p>
+        <div className="flex ">
+          <ul className="flex flex-col items-center">
+            {transaction.length > 0 &&
+              transaction.map(item => {
+                return (
+                  <li
+                    key={item.hash}
+                    className="border border-solid border-indigo-500/75 rounded mb-2 p-2"
+                  >
+                    <div className="flex overflow-hidden max-w-sm items-center">
+                      <FaStream style={{ marginRight: '5px' }} />
+                      <Link
+                        to={`transactions/${item.hash}`}
+                        className="text-ellipsis overflow-hidden text-blue-500 hover:text-blue-900"
+                      >
+                        <p className="text-sm text-ellipsis overflow-hidden">
+                          {item.hash}
+                        </p>
+                      </Link>
+                    </div>
 
-                    <p className="text-xs">from</p>
-                    <Link to={`address/${item.from}`}>
-                      <p className="text-xs">{item.from}</p>
-                    </Link>
+                    <div className="flex flex-col">
+                      <p className="text-xs text-ellipsis overflow-hidden">
+                        from
+                      </p>
+                      <Link to={`address/${item.from}`}>
+                        <p className="text-xs text-ellipsis overflow-hidden text-blue-500 hover:text-blue-900">
+                          {item.from}
+                        </p>
+                      </Link>
 
-                    <p className="text-xs">to</p>
-                    <Link to={`address/${item.from}`}>
-                      <p className="text-xs">{item.to}</p>
-                    </Link>
-                  </div>
-                </li>
-              );
-            })}
-        </ul>
+                      <p className="text-xs text-ellipsis overflow-hidden">
+                        to
+                      </p>
+                      <Link
+                        to={`address/${item.from}`}
+                        className="text-ellipsis overflow-hidden text-blue-500 hover:text-blue-900"
+                      >
+                        <p className="text-xs">{item.to}</p>
+                      </Link>
+                    </div>
+                  </li>
+                );
+              })}
+            <div className="w-full mx-auto">
+              <button className="block w-full text-xs text-sky-500 hover:bg-sky-600 hover:text-slate-50  bg-gray-300 rounded-sm p-1 mb-1">
+                View all transactions
+              </button>
+            </div>
+          </ul>
+        </div>
       </div>
     </>
   );

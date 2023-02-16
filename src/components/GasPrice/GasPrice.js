@@ -16,12 +16,12 @@ export const GasPrice = () => {
   return (
     <>
       {gasPrice ? (
-        <div>
-          <hr />
-          <RiGasStationFill />
-          <p>MED GAS PRICE</p>
-          <b>{Math.floor(gasPrice)} Gwei</b>
-          <hr />
+        <div className="flex items-center  m-1 p-4 w-1/4 border border-solid border-indigo-500/75 rounded">
+          <RiGasStationFill className="mr-2 text-purple-600" size={48} />
+          <div className="flex justify-between w-full">
+            <h3 className="w-40 text-lg">MED GAS PRICE</h3>
+            <p className="text-lg font-bold">{Math.floor(gasPrice)} Gwei</p>
+          </div>
         </div>
       ) : null}
     </>
