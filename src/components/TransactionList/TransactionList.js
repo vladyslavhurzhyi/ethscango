@@ -31,7 +31,7 @@ export const TransactionList = () => {
                       <FaStream style={{ marginRight: '5px' }} />
                       <Link
                         to={`transactions/${item.hash}`}
-                        className="text-ellipsis overflow-hidden text-blue-600"
+                        className="text-ellipsis overflow-hidden text-blue-500 hover:text-blue-900"
                       >
                         <p className="text-sm text-ellipsis overflow-hidden">
                           {item.hash}
@@ -44,7 +44,7 @@ export const TransactionList = () => {
                         from
                       </p>
                       <Link to={`address/${item.from}`}>
-                        <p className="text-xs text-ellipsis overflow-hidden text-blue-600">
+                        <p className="text-xs text-ellipsis overflow-hidden text-blue-500 hover:text-blue-900">
                           {item.from}
                         </p>
                       </Link>
@@ -54,7 +54,7 @@ export const TransactionList = () => {
                       </p>
                       <Link
                         to={`address/${item.from}`}
-                        className="text-ellipsis overflow-hidden text-blue-600"
+                        className="text-ellipsis overflow-hidden text-blue-500 hover:text-blue-900"
                       >
                         <p className="text-xs">{item.to}</p>
                       </Link>
