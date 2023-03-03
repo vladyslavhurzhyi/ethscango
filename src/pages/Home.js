@@ -4,6 +4,8 @@ import { Helmet } from 'react-helmet-async';
 import { Hero } from 'components/Hero/Hero';
 import { GasPrice } from 'components/GasPrice/GasPrice';
 import { TransactionList } from 'components/TransactionList/TransactionList';
+import { MarketCap } from 'components/MarketCap/MarketCap';
+import { EthPrice } from 'components/EthPrice/EthPrice';
 
 export default function Home() {
   return (
@@ -14,8 +16,10 @@ export default function Home() {
         </Helmet>
       }
       <Hero />
+      <EthPrice />
       <LastMinedBlock />
       <GasPrice />
+      <MarketCap />
       <div>
         <Chart />
       </div>
