@@ -19,14 +19,14 @@ export const TransactionList = () => {
       {transaction.length > 1 && (
         <div className="container flex  max-w-max m-auto">
           {/* <div className="flex bg-slate-50"> */}
-          <ul className="flex flex-col items-center">
+          <ul className="flex flex-col items-center ">
             <p className="font-bold">Latest Transactions</p>
             {transaction.length > 0 &&
               transaction.map(item => {
                 return (
                   <li
                     key={item.hash}
-                    className="border border-solid border-indigo-500/75 rounded mb-2 p-2"
+                    className="border border-solid border-indigo-500/75 rounded m-1 mb-2 p-2"
                   >
                     <div className="flex overflow-hidden max-w-sm items-center">
                       <FaStream style={{ marginRight: '5px' }} />
