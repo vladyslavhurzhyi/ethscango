@@ -16,14 +16,21 @@ export default function Home() {
         </Helmet>
       }
       <Hero />
-      <EthPrice />
-      <LastMinedBlock />
-      <GasPrice />
-      <MarketCap />
-      <div>
+      <div className="block">
+        <div>
+          <EthPrice />
+          <LastMinedBlock />
+        </div>
+        <div>
+          <GasPrice />
+          <MarketCap />
+        </div>
+
         <Chart />
       </div>
-      <TransactionList />
+      <div>
+        <TransactionList />
+      </div>
     </div>
   );
 }

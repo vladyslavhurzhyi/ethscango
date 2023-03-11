@@ -16,12 +16,16 @@ export const LastMinedBlock = () => {
   }, []);
 
   return (
-    <div className="flex items-center  m-1 p-4 w-1/4 border border-solid border-indigo-500/75 rounded">
-      <SiCodesandbox className="mr-2 text-purple-600" size={48} />
-      <div className="flex justify-between w-full">
-        <h3 className="w-40 text-lg">The most recently mined block</h3>
-        <p className="text-lg font-bold">{data}</p>
-      </div>
-    </div>
+    <>
+      {data && (
+        <div className="flex items-center  m-1 p-4  border border-solid border-indigo-500/75 rounded">
+          <SiCodesandbox className="mr-2 text-purple-600" size={48} />
+          <div className="flex justify-between w-full items-center">
+            <h3 className="w-40 text-lg">The most recently mined block</h3>
+            <p className="text-lg font-bold">{data}</p>
+          </div>
+        </div>
+      )}
+    </>
   );
 };
