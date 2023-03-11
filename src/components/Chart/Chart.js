@@ -71,7 +71,7 @@ export const Chart = () => {
   return (
     <>
       {price.length > 1 && (
-        <div style={{ maxWidth: '300px', maxHeight: '200px' }}>
+        <div style={{ paddingTop: '20px' }}>
           <Line data={data} options={options}></Line>
         </div>
       )}

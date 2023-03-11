@@ -16,10 +16,11 @@ export const TransactionList = () => {
 
   return (
     <>
-      <div className="container px-4">
-        <p className="font-bold">Latest Transactions</p>
-        <div className="flex ">
+      {transaction.length > 1 && (
+        <div className="container flex  max-w-max m-auto">
+          {/* <div className="flex bg-slate-50"> */}
           <ul className="flex flex-col items-center">
+            <p className="font-bold">Latest Transactions</p>
             {transaction.length > 0 &&
               transaction.map(item => {
                 return (
@@ -69,7 +70,8 @@ export const TransactionList = () => {
             </div>
           </ul>
         </div>
-      </div>
+      )}
+      {/* </div> */}
     </>
   );
 };
