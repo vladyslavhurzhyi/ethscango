@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import { SharedLayout } from './SharedLayout/SharedLayout';
 
 const HomePage = lazy(() => import('../pages/Home'));
+const Login = lazy(() => import('../pages/Login'));
 const AddressPage = lazy(() => import('../pages/Address'));
 const TransactionDetailsPage = lazy(() =>
   import('../pages/TransactionDetails')
@@ -20,6 +21,7 @@ const App = () => {
       <Route path="/" element={<SharedLayout />}>
         <Route index element={<HomePage />} />
         <Route path="address/:addressnum" element={<AddressPage />} />
+        <Route path="login" element={<Login />} />
         <Route
           path="transactions/:transactionHash"
           element={<TransactionDetailsPage />}
