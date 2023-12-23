@@ -16,7 +16,7 @@ export default function Home() {
         </Helmet>
       }
       <Hero />
-      <div className="container px-4 mx-auto flex justify-center mt-5">
+      <div className="container px-4 mx-auto flex justify-center mt-5 max-h-[400px]">
         <div>
           <EthPrice />
           <LastMinedBlock />
@@ -30,8 +30,7 @@ export default function Home() {
         <Chart />
       </div>
 
-      <div className="container px-4 mx-auto flex mt-5">
-        <TransactionList />
+      <div className="flex justify-center  mt-10 mb-[100px]">
         <TransactionList />
       </div>
     </div>

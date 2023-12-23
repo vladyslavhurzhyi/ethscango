@@ -1,4 +1,5 @@
 import { getTransactionLis } from 'API/getData';
+import BigSkeleton from 'components/Skeleton/BigSkeleton';
 import { useState, useEffect } from 'react';
 import { FaStream } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
@@ -16,10 +17,9 @@ export const TransactionList = () => {
 
   return (
     <>
-      {transaction.length > 1 && (
+      {transaction.length > 1 ? (
         <div className="container flex  max-w-max m-auto">
-          {/* <div className="flex bg-slate-50"> */}
-          <ul className="flex flex-col items-center ">
+          <ul className="flex flex-col  ">
             <p className="font-bold">Latest Transactions</p>
             {transaction.length > 0 &&
               transaction.map(item => {
@@ -28,7 +28,7 @@ export const TransactionList = () => {
                     key={item.hash}
                     className="border border-solid border-indigo-500/75 rounded m-1 mb-2 p-2"
                   >
-                    <div className="flex overflow-hidden max-w-sm items-center">
+                    <div className="flex overflow-hidden w-full items-center">
                       <FaStream style={{ marginRight: '5px' }} />
                       <Link
                         to={`transactions/${item.hash}`}
@@ -70,8 +70,9 @@ export const TransactionList = () => {
             </div>
           </ul>
         </div>
+      ) : (
+        <BigSkeleton />
       )}
-      {/* </div> */}
     </>
   );
 };

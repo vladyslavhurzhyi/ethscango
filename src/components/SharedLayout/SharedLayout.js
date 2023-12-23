@@ -8,10 +8,10 @@ import { Footer } from 'components/Footer/Footer';
 
 export const SharedLayout = () => {
   return (
-    <div>
+    <div className="">
       <Helmet defaultTitle="EthScanGo" titleTemplate="%s - EthScanGo" />
       <AppBar />
-      <Suspense fallback={<div>Loading page...</div>}>
+      <Suspense fallback={<>Loading page...</>}>
         <Outlet />
       </Suspense>
       {/* <ToastContainer /> */}

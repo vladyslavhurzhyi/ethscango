@@ -9,14 +9,14 @@ export const Footer = () => {
     await loadFull(engine);
   }, []);
   return (
-    <div className="relative p-4">
+    <div className="mt-auto fixed bottom-0 left-0 w-full  text-white p-3">
       <Particles
         className="absolute bottom-0 right-0 w-full h-full"
         id="footer"
         options={options}
         init={particlesInits}
       />
-      <p className="relative flex justify-center items-center m-6">
+      <p className="relative text-zinc-400 flex justify-center items-center m-6">
         {' '}
         Copyright &copy; {new Date().getFullYear()} Created by Vlad Krasovsky,
         Irene Creadora, Vladyslav Hurzhyi

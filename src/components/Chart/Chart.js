@@ -13,6 +13,7 @@ import {
 import { getPriceEthMonth } from 'API/getPriceForChart';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import SmallSkeleton from 'components/Skeleton/Skeleton';
 
 ChartJS.register(
   CategoryScale,
@@ -70,10 +71,12 @@ export const Chart = () => {
 
   return (
     <>
-      {price.length > 1 && (
+      {price.length > 1 ? (
         <div style={{ paddingTop: '20px' }}>
           <Line data={data} options={options}></Line>
         </div>
+      ) : (
+        <SmallSkeleton />
       )}
     </>
   );
